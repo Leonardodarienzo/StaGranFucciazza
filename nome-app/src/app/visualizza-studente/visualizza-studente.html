@@ -1,0 +1,12 @@
+<div class="card mb-3 p-3">
+  <h4>{{ studente.nome }}</h4>
+  <p>Classe: {{ studente.classe }}</p>
+
+  <button class="btn btn-sm btn-primary" (click)="mostraMedia()">
+    Mostra media voti
+  </button>
+
+  <p *ngIf="mostra" class="mt-2">
+    Media voti: <strong>{{ studente.mediaVoti }}</strong>
+  </p>
+</div>
